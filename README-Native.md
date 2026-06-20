@@ -61,7 +61,7 @@ git clone https://github.com/alfannite/genie-acs
 Pindah ke direktori hasil clone agar perintah selanjutnya berjalan di path yang benar.
 
 ```bash
-cd ubuntu-gacs-install.sh
+cd genie-acs
 ```
 
 ---

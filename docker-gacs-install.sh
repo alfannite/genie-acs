@@ -1,10 +1,3 @@
-#!/bin/bash
-
-# GenieACS Docker Universal Installer
-# Compatible with any VPS and ZeroTier network configuration
-# Features: Full auto ZeroTier installation, network join, IP detection, improved error handling, fixed ZeroTier status, comprehensive Docker registry fixes
-# Version: 1.6
-
 # Color definitions
 RED='\033[0;31m'
 GREEN='\033[0;32m'
