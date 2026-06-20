@@ -62,7 +62,7 @@ apt update -y && apt upgrade -y && apt autoremove -y
 Install Docker Engine dan Docker Compose secara otomatis menggunakan script.
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install-Docker/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install/install.sh)
 ```
 
 ---
