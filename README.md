@@ -19,21 +19,22 @@
 
 ## Choose Installation Method
 
-<p align="center">
-  <a href="./README-Docker.md">
-    <img src="https://cdn.simpleicons.org/docker/2496ED" width="120" alt="Docker">
-  </a>
+<table align="center">
+<tr>
+<td align="center" width="280">
+<a href="./README-Docker.md">
+  <img src="https://cdn.simpleicons.org/docker/2496ED" width="120" alt="Docker">
+</a>
+</td>
 
+<td align="center" width="280">
+<a href="./README-NonDocker.md">
+  <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="120" alt="Ubuntu">
+</a>
+</td>
+</tr>
+</table>
 
-  <a href="./README-NonDocker.md">
-    <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="120" alt="Ubuntu">
-  </a>
-</p>
-<p align="center">
-  <b>Docker</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Ubuntu</b>
-</p>
 
 ---
 
