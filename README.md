@@ -14,7 +14,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=2000&color=58A6FF&center=true&vCenter=true&width=600&lines=Installations+Docker;Linux+Ubuntu;Convenience;Always+Learning+%F0%9F%9A%80" />
 </p>
 
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
 </p>
