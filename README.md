@@ -1,45 +1,33 @@
-<!-- README.md (utama) -->
-<h1 align="center">GenieACS Auto Install</h1>
+<p align="center">
+  <img src="img/main-logo.png" width="180">
+</p>
+
+<h1 align="center">GenieACS Script Installation</h1>
 
 <p align="center">
-  Panduan instalasi GenieACS untuk dua mode <b>Docker</b> dan <b>Non-Docker (Ubuntu 22.04)</b>.
+  Complete installation guide for <b>GenieACS</b> deployment using
+  <b>Docker</b> and <b>Native Ubuntu</b>, including setup,
+  configuration, and service management.
 </p>
 
 <p align="center">
-  <!-- Tombol besar: Docker -->
-  <a href="./README-Docker.md" title="Buka panduan Docker">
-    <img alt="Docker Guide" height="36"
-         src="https://img.shields.io/badge/Docker-Guide-2496ED?logo=docker&logoColor=white">
-  </a>
-  &nbsp;&nbsp;
-  <!-- Tombol besar: Non Docker -->
-  <a href="./README-NonDocker.md" title="Buka panduan Non-Docker (Ubuntu 22.04)">
-    <img alt="Ubuntu Non-Docker 22.04" height="36"
-         src="https://img.shields.io/badge/Ubuntu-Non--Docker%20(22.04)-E95420?logo=ubuntu&logoColor=white">
-  </a>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
 </p>
 
 ---
 
-## Pilih Mode Instalasi
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="./README-Docker.md" title="Panduan Docker">
-        <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker logo" width="64" height="64"><br/>
-        <b>Docker</b>
-      </a>
-      <br/>
-    </td>
-    <td align="center" width="50%">
-      <a href="./README-NonDocker.md" title="Panduan Non-Docker (Ubuntu 22.04)">
-        <img src="https://cdn.simpleicons.org/ubuntu/E95420" alt="Ubuntu logo" width="64" height="64"><br/>
-        <b>Ubuntu</b>
-      </a>
-      <br/>
-    </td>
-  </tr>
-</table>
+## Choose Installation Method
+
+<p align="center">
+  <a href="./README-Docker.md">
+    <img src="https://cdn.simpleicons.org/docker/2496ED" width="120" alt="Docker">
+  </a>
+
+  <a href="./README-NonDocker.md">
+    <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="120" alt="Ubuntu">
+  </a>
+</p>
 
 ---
 
@@ -47,6 +35,5 @@
 Silakan pilih metode instalasi sesuai kebutuhan Anda
 - **Docker** - lebih cepat, mudah di-rollback, isolasi layanan.
 - **Non-Docker** - kontrol penuh di host Ubuntu 22.04 (Jammy).
-- Dashboard for better visualisation https://github.com/safrinnetwork/GACS-dashboard
 
 > Manual Guide - [README-Docker.md](./README-Docker.md) · [README-NonDocker.md](./README-NonDocker.md)
