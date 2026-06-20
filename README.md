@@ -24,9 +24,15 @@
     <img src="https://cdn.simpleicons.org/docker/2496ED" width="120" alt="Docker">
   </a>
 
+
   <a href="./README-NonDocker.md">
     <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="120" alt="Ubuntu">
   </a>
+</p>
+<p align="center">
+  <b>Docker</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Ubuntu</b>
 </p>
 
 ---
