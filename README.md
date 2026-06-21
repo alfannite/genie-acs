@@ -34,7 +34,7 @@
 </td>
 
 <td align="center" width="280">
-<a href="./README-Nativ.md">
+<a href="./README-Native.md">
   <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="120" alt="Ubuntu">
 </a>
 </td>
