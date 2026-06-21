@@ -17,6 +17,8 @@
 <p>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/GenieACS-000000?style=flat-square&logo=gnu&logoColor=white" />
 </p>
 
 ---
@@ -40,6 +42,11 @@
 </td>
 </tr>
 </table>
+
+---
+## Guide Tambahan
+
+Kalau kamu mau pakai **Notion** untuk mengikuti guide tekan **Button** di bawah ini
 
 ---
 
