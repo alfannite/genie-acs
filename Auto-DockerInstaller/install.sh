@@ -45,9 +45,6 @@ banner_success() {
   echo "  ███████║╚██████╔╝╚██████╗╚██████╗███████╗███████║███████║██╗"
   echo "  ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝╚═╝"
   echo ""
-  docker --version 2>/dev/null
-  docker compose version 2>/dev/null
-  echo ""
   echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
   echo -e "  ${BOLD}Lanjut install GenieACS${NC}"
