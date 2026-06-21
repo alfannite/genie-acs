@@ -33,7 +33,7 @@ services:
       # Optional: Mount custom extensions
       - ${GENIEACS_EXT_HOST_DIR:-./ext}:/opt/genieacs/ext
 
-    # Ports (when not using host network)
+    # Ports (kalau tidak menggunakan network_mode: host, port mapping tidak diperlukan)
     # ports:
     #   - "7547:7547"  # CWMP (TR-069)
     #   - "7557:7557"  # NBI (North Bound Interface)

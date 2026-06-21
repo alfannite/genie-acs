@@ -1,6 +1,3 @@
-#!/bin/bash
-
-# Function to log with timestamp
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
 }
