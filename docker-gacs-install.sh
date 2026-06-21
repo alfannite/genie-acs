@@ -69,19 +69,21 @@ prompt_input() {
     fi
 }
 
-# Print banner
 print_banner() {
-    echo -e "${BLUE}${BOLD}"
-    echo "   ____            _        ____            _     _        "
-    echo "  / ___|  ___ _ __(_) ___  |  _ \  ___   ___| | __(_)_ __   "
-    echo " | |  _  / _ \ '__| |/ _ \ | | | |/ _ \ / __| |/ /| | '_ \  "
-    echo " | |_| ||  __/ |  | |  __/ | |_| | (_) | (__|   < | | |_) | "
-    echo "  \____| \___|_|  |_|\___| |____/ \___/ \___|_|\_\|_| .__/  "
-    echo "                                                   |_|     "
-    echo ""
-    echo "              GenieACS Docker Universal Installer"
-    echo "                     with ZeroTier Support"
-    echo -e "${NC}"
+	echo -e "${BLUE}${BOLD}"
+    echo "  ╔══════════════════════════════════════════╗"
+    echo "  ║                                          ║"
+    echo "  ║    ██████╗  █████╗  ██████╗███████╗      ║"
+    echo "  ║   ██╔════╝ ██╔══██╗██╔════╝██╔════╝      ║"
+    echo "  ║   ██║  ███╗███████║██║     ███████╗      ║"
+    echo "  ║   ██║   ██║██╔══██║██║     ╚════██║      ║"
+    echo "  ║   ╚██████╔╝██║  ██║╚██████╗███████║      ║"
+    echo "  ║    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚══════╝      ║"
+    echo "  ║                                          ║"
+    echo "  ║   Baremetal Installer — Ubuntu Edition   ║"
+    echo "  ╚══════════════════════════════════════════╝"
+	echo ""
+	echo -e "${NC}"
 }
 
 # Check for root access and system requirements

@@ -61,10 +61,8 @@ apt update -y && apt upgrade -y && apt autoremove -y
 
 Install Docker Engine dan Docker Compose secara otomatis menggunakan script. 
 
-# CHECK POINNT DI SINI POINTING AUTO INSTALL DOCKER, MAUU BERAK
-
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install/Auto-DockerInstaller/install.sh)
 ```
 
 ---
@@ -94,8 +92,8 @@ cd genie-acs
 Beri izin eksekusi lalu jalankan script installer Docker yang sudah include konfigurasi ZeroTier.
 
 ```bash
-chmod +x install-genieacs-docker.sh
-./install-genieacs-docker.sh
+chmod +x docker-gacs-install.sh
+./docker-gacs-install.sh
 ```
 
 ---
@@ -127,7 +125,8 @@ apt update -y && apt upgrade -y && apt autoremove -y
 Install Docker Engine dan Docker Compose secara otomatis menggunakan script.
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install/Auto-DockerInstaller/install.sh)
+
 ```
 
 ---
