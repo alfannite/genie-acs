@@ -18,13 +18,13 @@ banner_start() {
   echo "  ██████╔╝╚██████╔╝╚██████╗██║  ██╗███████╗██║  ██║"
   echo "  ╚═════╝  ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝"
   echo -e "${NC}"
-  echo -e "${BLUE}${BOLD}         Auto Install Docker — by Alfannite${NC}"
-  echo -e "${YELLOW}  ─────────────────────────────────────────────────${NC}"
+  echo -e "${BLUE}${BOLD}         Auto Install Docker Engine — by Alfannite${NC}"
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
 }
 
 banner_success() {
-  echo ""
+  clear
   echo -e "${GREEN}${BOLD}"
   echo "  ███████╗██╗   ██╗ ██████╗ ██████╗███████╗███████╗███████╗██╗"
   echo "  ██╔════╝██║   ██║██╔════╝██╔════╝██╔════╝██╔════╝██╔════╝██║"
@@ -33,15 +33,28 @@ banner_success() {
   echo "  ███████║╚██████╔╝╚██████╗╚██████╗███████╗███████║███████║██╗"
   echo "  ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝╚═╝"
   echo -e "${NC}"
-  echo -e "${GREEN}${BOLD}         Docker berhasil terinstall! 🚀${NC}"
-  echo -e "${YELLOW}  ─────────────────────────────────────────────────${NC}"
+  echo -e "${GREEN}${BOLD}         Docker Engine berhasil terinstall! 🚀${NC}"
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
+  echo ""
+  echo -e "  ${BOLD}Docker version:${NC}"
+  docker --version 2>/dev/null && docker compose version 2>/dev/null
+  echo ""
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
+  echo ""
+  echo -e "  ${BOLD}Lanjut install GenieACS? Jalankan:${NC}"
+  echo ""
+  echo -e "  ${CYAN}git clone https://github.com/alfannite/genie-acs${NC}"
+  echo -e "  ${CYAN}cd genie-acs${NC}"
+  echo -e "  ${CYAN}chmod +x install-genieacs-docker.sh && ./install-genieacs-docker.sh${NC}"
+  echo ""
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
   echo -e "  ${BOLD}Connect with me:${NC}"
   echo ""
   echo -e "  ${CYAN}GitHub    ${NC}→  https://github.com/alfannite"
   echo -e "  ${RED}Instagram ${NC}→  https://instagram.com/alfan.niteops"
   echo ""
-  echo -e "${YELLOW}  ─────────────────────────────────────────────────${NC}"
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
 }
 
@@ -61,10 +74,9 @@ error_msg() {
 # ─── START ───
 banner_start
 
-echo -e "${BOLD}  Installer ini akan:${NC}"
-echo -e "  • Clone repo Docker dari ${CYAN}github.com/alfannite/docker${NC}"
-echo -e "  • Masuk ke folder ubuntu"
-echo -e "  • Jalankan install.sh secara otomatis"
+echo -e "  ${BOLD}Script ini akan install:${NC}"
+echo -e "  • Docker Engine"
+echo -e "  • Docker Compose Plugin"
 echo ""
 echo -ne "${YELLOW}  Lanjutkan instalasi? (y/n): ${NC}"
 read -r confirm
@@ -78,45 +90,54 @@ fi
 
 echo ""
 
-# ─── CLONE ───
-step "Cloning repository..."
+# ─── CLONE REPO DOCKER ───
+step "Mengambil installer dari repo docker..."
 sleep 1
 
-if git clone https://github.com/alfannite/docker.git /tmp/alfannite-docker 2>/dev/null; then
-  success_msg "Repository berhasil di-clone"
+rm -rf /tmp/alfannite-docker
+
+if git clone https://github.com/alfannite/docker.git /tmp/alfannite-docker --depth=1 -q; then
+  success_msg "Installer berhasil diambil"
 else
-  error_msg "Gagal clone repository. Cek koneksi internet kamu."
+  error_msg "Gagal mengambil installer. Cek koneksi internet kamu."
 fi
 
-# ─── MASUK FOLDER ───
-step "Masuk ke folder ubuntu..."
-cd /tmp/alfannite-docker/ubuntu || error_msg "Folder ubuntu tidak ditemukan di repo."
-success_msg "Berhasil masuk ke folder ubuntu"
+# ─── CEK FILE ───
+step "Memeriksa file installer..."
+
+if [ ! -f /tmp/alfannite-docker/ubuntu/install.sh ]; then
+  error_msg "File installer tidak ditemukan di repo docker."
+fi
+
+success_msg "File installer ditemukan"
 
 # ─── PERMISSION ───
-step "Memberikan izin eksekusi pada install.sh..."
-chmod +x install.sh
+step "Memberikan izin eksekusi..."
+chmod +x /tmp/alfannite-docker/ubuntu/install.sh
 success_msg "Permission berhasil diberikan"
 
 # ─── INSTALL ───
-step "Menjalankan install.sh..."
+step "Menjalankan installer Docker Engine..."
 echo ""
-echo -e "${YELLOW}  ─────────────────────────────────────────────────${NC}"
+echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
 echo ""
 
-sudo ./install.sh
+cd /tmp/alfannite-docker/ubuntu && sudo ./install.sh
 
 EXIT_CODE=$?
 
 echo ""
-echo -e "${YELLOW}  ─────────────────────────────────────────────────${NC}"
+echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
+
+# ─── CLEANUP ───
+step "Membersihkan file sementara..."
+rm -rf /tmp/alfannite-docker
+success_msg "Cleanup selesai"
+
+echo ""
 
 if [ $EXIT_CODE -eq 0 ]; then
   banner_success
 else
-  echo ""
   error_msg "Instalasi gagal. Cek log di atas untuk detail error."
 fi
-
-# ─── CLEANUP ───
-rm -rf /tmp/alfannite-docker

@@ -59,7 +59,9 @@ apt update -y && apt upgrade -y && apt autoremove -y
 
 **Step 3 — Install Docker + Compose**
 
-Install Docker Engine dan Docker Compose secara otomatis menggunakan script.
+Install Docker Engine dan Docker Compose secara otomatis menggunakan script. 
+
+# CHECK POINNT DI SINI POINTING AUTO INSTALL DOCKER, MAUU BERAK
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/alfannite/genie-acs/Auto-Install/install.sh)
