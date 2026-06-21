@@ -29,9 +29,6 @@ banner_cancel() {
   echo "  ██╔══██╗  ╚██╔╝  ██╔══╝  "
   echo "  ██████╔╝   ██║   ███████╗ "
   echo "  ╚═════╝    ╚═╝   ╚══════╝ "
-  echo -e "${NC}"
-  echo -e "${YELLOW}${BOLD}         Instalasi dibatalkan.${NC}"
-  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
 }
 
@@ -74,9 +71,7 @@ error_msg() {
 # ─── START ───
 banner_start
 
-echo -e "  ${BOLD}Script ini akan install:${NC}"
-echo -e "  • Docker Engine"
-echo -e "  • Docker Compose Plugin"
+echo -e "  ${BOLD}Script ini akan clone Repository dari https://github.com/alfannite/docker${NC}"
 echo ""
 echo -ne "${YELLOW}  Lanjutkan instalasi? (y/n): ${NC}"
 read -r confirm
