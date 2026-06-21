@@ -45,7 +45,6 @@ banner_success() {
   echo "  ███████║╚██████╔╝╚██████╗╚██████╗███████╗███████║███████║██╗"
   echo "  ╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝╚═╝"
   echo ""
-  echo -e "  ${BOLD}Docker version:${NC}"
   docker --version 2>/dev/null
   docker compose version 2>/dev/null
   echo ""
