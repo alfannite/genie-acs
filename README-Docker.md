@@ -261,24 +261,7 @@ Jalankan rule berikut di MikroTik. Sesuaikan `IP_ZEROTIER_Server`, nama interfac
   out-interface=[NAMA_INTERFACE_VLAN] action=accept
 ```
 
-> **Catatan:** Port `58000` adalah contoh port Connection Request URL dari ONU — sesuaikan dengan perangkat kamu.
-
----
-
-## Template & Tools
-
-| Tool | Link |
-|------|------|
-| ZeroTier Firewall Generator | https://nangili.id/tools/zt_firewall.html |
-| ZeroTier Config Generator | https://nangili.id/tools/zt_config.html |
-
----
-
-## Video Panduan
-
-| Topik | Link |
-|-------|------|
-| Instalasi Docker | https://youtu.be/Jt0bW3Yq2d8?feature=shared |
+> **Catatan:** Port `58000` adalah contoh port Koneksi Request URL dari ONT — sesuaikan dengan perangkat kamu.
 
 ---
 
