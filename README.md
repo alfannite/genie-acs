@@ -23,6 +23,8 @@
 
 ## Choose Installation Method
 
+**Click** Logo Platfrom yang mau kamu pakai.
+
 <table align="center">
 <tr>
 <td align="center" width="280">
