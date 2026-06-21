@@ -223,7 +223,7 @@ Jalankan rule berikut di MikroTik. Sesuaikan `IP_ZEROTIER_Server`, nama interfac
   out-interface=[NAMA_INTERFACE_VLAN] action=accept
 ```
 
-> **Catatan:** Port `58000` adalah contoh port Connection Request URL dari ONU — sesuaikan dengan perangkat kamu.
+> **Catatan:** Port `58000` adalah contoh port Koneksi Request URL dari ONT — sesuaikan dengan perangkat kamu.
 
 ---
 <div align="center">
