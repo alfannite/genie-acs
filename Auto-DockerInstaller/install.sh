@@ -23,6 +23,21 @@ banner_start() {
   echo ""
 }
 
+banner_cancel() {
+  clear
+  echo -e "${YELLOW}${BOLD}"
+  echo "  ██████╗ ██╗   ██╗███████╗"
+  echo "  ██╔══██╗╚██╗ ██╔╝██╔════╝"
+  echo "  ██████╔╝ ╚████╔╝ █████╗  "
+  echo "  ██╔══██╗  ╚██╔╝  ██╔══╝  "
+  echo "  ██████╔╝   ██║   ███████╗ "
+  echo "  ╚═════╝    ╚═╝   ╚══════╝ "
+  echo -e "${NC}"
+  echo -e "${YELLOW}${BOLD}         Instalasi dibatalkan.${NC}"
+  echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
+  echo ""
+}
+
 banner_success() {
   clear
   echo -e "${GREEN}${BOLD}"
@@ -37,7 +52,8 @@ banner_success() {
   echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
   echo -e "  ${BOLD}Docker version:${NC}"
-  docker --version 2>/dev/null && docker compose version 2>/dev/null
+  docker --version 2>/dev/null
+  docker compose version 2>/dev/null
   echo ""
   echo -e "${YELLOW}  ────────────────────────────────────────────────────${NC}"
   echo ""
@@ -59,7 +75,7 @@ banner_success() {
 }
 
 step() {
-  echo -e "${CYAN}${BOLD}  [ * ] $1${NC}"
+  echo -e "${CYAN}${BOLD}  [ ~ ] $1${NC}"
 }
 
 success_msg() {
@@ -82,9 +98,7 @@ echo -ne "${YELLOW}  Lanjutkan instalasi? (y/n): ${NC}"
 read -r confirm
 
 if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
-  echo ""
-  echo -e "${RED}  Instalasi dibatalkan.${NC}"
-  echo ""
+  banner_cancel
   exit 0
 fi
 
@@ -136,6 +150,7 @@ success_msg "Cleanup selesai"
 
 echo ""
 
+# ─── RESULT ───
 if [ $EXIT_CODE -eq 0 ]; then
   banner_success
 else
