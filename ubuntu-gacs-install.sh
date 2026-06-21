@@ -40,7 +40,6 @@ run_command() {
     fi
 }
 
-# Print banner
 print_banner() {
 	echo -e "${BLUE}${BOLD}"
     echo "  ╔══════════════════════════════════════════╗"
