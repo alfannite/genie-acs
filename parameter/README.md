@@ -35,7 +35,7 @@ Before starting, make sure you have:
 
 - Docker & Docker Compose installed and running
 - GenieACS container running (`genieacs-server`)
-- Backup files available at `/GACS-Ubuntu-22.04/parameter/`
+- Backup files available at `/genie-acs/parameter/`
 
 ---
 
@@ -44,7 +44,7 @@ Before starting, make sure you have:
 ### 1. Copy Files ke Container
 
 ```bash
-docker cp /GACS-Ubuntu-22.04/parameter/ genieacs-server:/tmp/
+docker cp /genie-acs/parameter/ genieacs-server:/tmp/
 ```
 
 ### 2. Restore Collections

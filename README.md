@@ -44,7 +44,7 @@
 </table>
 
 ---
-## Guide Tambahan
+## Guide Tambahan >> CHECK POINT, LAST ON LAPTOP !!!!!!!!!!!!!
 
 Kalau kamu mau pakai **Notion** untuk mengikuti guide tekan **Button** di bawah ini
 
