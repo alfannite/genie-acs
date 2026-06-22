@@ -53,8 +53,8 @@ ini hanya untuk Guide Install di **Native Ubuntu**
 <table align="center">
 <tr>
 <td align="center" width="280">
-<a href="">
-  <img src="https://cdn.simpleicons.org/notion/000000" width="120" alt="Notion">
+<a href="https://app.notion.com/p/Guide-Install-GACS-pakai-LXC-PVE-387cda48a65a80e6868cc455c3f849dd?source=copy_link">
+  <img src="https://cdn.simpleicons.org/notion/ffffff" width="120" alt="Notion">
 </a>
 </td>
 </tr>
