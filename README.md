@@ -44,9 +44,21 @@
 </table>
 
 ---
-## Guide Tambahan >> CHECK POINT, LAST ON PC!!!!!!!!!!!!!
+## Fast Guide
 
-Kalau kamu mau pakai **Notion** untuk mengikuti guide tekan **Button** di bawah ini
+ini hanya untuk Guide Install di **Native Ubuntu**
+
+**Click** Notion di bawah ini untuk Guide yang lebih **Mudah**.
+
+<table align="center">
+<tr>
+<td align="center" width="280">
+<a href="">
+  <img src="https://cdn.simpleicons.org/notion/000000" width="120" alt="Notion">
+</a>
+</td>
+</tr>
+</table>
 
 ---
 
