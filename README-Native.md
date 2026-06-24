@@ -226,6 +226,7 @@ Jalankan rule berikut di MikroTik. Sesuaikan `IP_ZEROTIER_Server`, nama interfac
 > **Catatan:** Port `58000` adalah contoh port Koneksi Request URL dari ONT — sesuaikan dengan perangkat kamu.
 
 ---
+
 <div align="center">
   <p>Made by Alfannite for you hehe 😊 </p>
 
@@ -244,7 +245,7 @@ Jalankan rule berikut di MikroTik. Sesuaikan `IP_ZEROTIER_Server`, nama interfac
   <a href="https://www.twitch.tv/fannitee">
     <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"/>
   </a>
-  <a href="https://discord.gg/LINK_INVITE_ATAU_USER">
+  <a href="https://discord.gg/mS4UXkQjW">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
   </a>
 </div>

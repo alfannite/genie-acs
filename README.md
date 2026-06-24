@@ -88,7 +88,7 @@ Choose the installation method that best fits your infrastructure and follow the
   <a href="https://www.twitch.tv/fannitee">
     <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"/>
   </a>
-  <a href="https://discord.gg/LINK_INVITE_ATAU_USER">
+  <a href="https://discord.gg/mS4UXkQjW">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
   </a>
 </div>
